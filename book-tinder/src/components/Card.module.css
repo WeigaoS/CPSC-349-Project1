@@ -1,0 +1,58 @@
+  /* Smaller screens */
+@media screen and (max-width: 600px) {
+    .card {
+        display: block;
+        min-height: 80%;
+        min-width: 80%;
+        background-color: white;
+    }
+  }
+
+/* Bigger screens */
+@media screen and (min-width: 601px) {
+    .card {
+        display: block;
+        width: 500px;
+        height: 600px;
+        background-color: white;
+    }
+}
+
+.card {
+    border-radius: 18px;
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
+
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .buttonRow{
+        /* Center vertically and horizontally */
+        position: absolute;
+        top: 550px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+
+  .buttonRow img{
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  .navUl{
+    margin: 0;
+    padding: 0;
+  }
+
+  .navLi{
+    display: inline;
+    float: right;
+  }
+  

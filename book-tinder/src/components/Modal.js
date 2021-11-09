@@ -1,3 +1,6 @@
+// This is the component that will display when the modal is set to true.
+// The modal acts as a landing page and allows the user to add a new book to the database
+
 import { useRef }from 'react';
 
 import classes from './Modal.module.css';
@@ -11,6 +14,7 @@ function Modal(props){
         props.onClose();
     }
 
+    // Handles the structure of our book that will be pushed and pulled from the database
     function submitHandler(event){
         event.preventDefault();
 

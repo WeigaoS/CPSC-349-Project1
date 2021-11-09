@@ -1,0 +1,58 @@
+  /* Smaller screens */
+  @media screen and (max-width: 600px) {
+    .likebuttons {
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .likebuttons img{
+        max-height: 75px;
+        max-width: 100px;
+    }
+  }
+
+/* Bigger screens */
+@media screen and (min-width: 601px) {
+    .likebuttons {
+        position: absolute;
+        top: calc(100% - 75px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .likebuttons img{
+        max-height: 100px;
+        max-width: 150px;
+    }
+}
+
+/* Bigger screens */
+@media screen and (min-width: 801px) {
+    .likebuttons {
+        position: fixed;
+        top: calc(100% - 75px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .likebuttons img{
+        max-height: 300px;
+        max-width: 150px;
+    }
+  }
+
+
+.likebuttons{
+        /* Center vertically and horizontally */
+        display: flex;
+}
+
+.outOfBooks{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

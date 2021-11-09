@@ -1,3 +1,5 @@
+// Simple and slightly opaque backdrop when the modal is displayed
+
 import classes from './ModalBackground.module.css';
 
 function ModalBackground(props) {

@@ -1,14 +1,34 @@
+  /* Smaller screens */
+  @media screen and (max-width: 600px) {
+    .modal {
+      position: relative;
+      top: 0px;
+      left: calc(50% - 10rem);
+      padding: 1rem;
+      text-align: center;
+      max-width: 20rem;
+    }
+  }
+
+/* Bigger screens */
+@media screen and (min-width: 601px) {
+    .modal {
+      padding: 1rem;
+      text-align: center;
+      width: 30rem;
+      position: fixed;
+      top: 20vh;
+      left: calc(50% - 15rem);
+    }
+}
+
+
+
 .modal {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     background-color: white;
-    padding: 1rem;
-    text-align: center;
-    width: 30rem;
     z-index: 10;
-    position: fixed;
-    top: 20vh;
-    left: calc(50% - 15rem);
   }
 
   .form {

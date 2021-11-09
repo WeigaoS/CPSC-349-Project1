@@ -2,8 +2,10 @@
 @media screen and (max-width: 600px) {
     .card {
         display: block;
-        min-height: 80%;
+        
+        max-height: 90%;
         min-width: 80%;
+        max-width: 100%;
         background-color: white;
     }
   }
@@ -12,10 +14,20 @@
 @media screen and (min-width: 601px) {
     .card {
         display: block;
-        width: 500px;
-        height: 600px;
+        width: 400px;
+        height: 550px;
         background-color: white;
     }
+}
+
+/* Bigger screens */
+@media screen and (min-width: 801px) {
+  .card {
+      display: block;
+      width: 450px;
+      height: 550px;
+      background-color: white;
+  }
 }
 
 .card {
@@ -28,31 +40,3 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-  .buttonRow{
-        /* Center vertically and horizontally */
-        position: absolute;
-        top: 550px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-  }
-
-  .buttonRow img{
-    max-height: 100px;
-    max-width: 100px;
-  }
-
-  ul{
-    list-style-type: none;
-  }
-
-  .navUl{
-    margin: 0;
-    padding: 0;
-  }
-
-  .navLi{
-    display: inline;
-    float: right;
-  }
-  

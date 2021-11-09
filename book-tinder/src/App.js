@@ -1,11 +1,11 @@
-//import './App.css';
 import { useState, useEffect } from 'react';
 import Modal from "./components/Modal";
 import ModalBackground from "./components/ModalBackground";
-//import Card from './components/Card';
 import BookList from './components/BookList';
 import SiteHeader from './components/SiteHeader';
-
+import classes from '../src/components/Likebuttons.module.css';
+import dlbutton from '../src/images/trash.png';
+import lbutton from '../src/images/smart.png';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(true);
@@ -107,8 +107,10 @@ function App() {
     return(
       <section>
          <SiteHeader />
-        <button onClick={openHandler}>OPEN MODAL</button>
-        <p>THATS ALL THE BOOKS WE GOT. TRY BACK LATER</p>
+        <section className={classes.outOfBooks}>
+          <p>We're all out of books! Refresh the page to start over or click the button to add a new book.</p>
+          <button onClick={openHandler}>Add New Book</button>
+        </section>
         {modalOpen && <Modal onClose={closeHandler} />}
         {modalOpen && <ModalBackground onClose={closeHandler}/>}
       </section>
@@ -119,13 +121,15 @@ function App() {
   return (
     <div>
       <SiteHeader />
-      <button onClick={openHandler}>OPEN MODAL</button>
-      <button onClick={updateLikesHandler}>Like</button>
-      <button onClick={updateDislikesHandler}>Dislike</button>
+        
       {modalOpen && <Modal onClose={closeHandler} />}
       {modalOpen && <ModalBackground onClose={closeHandler}/>}
 
       <BookList books={booksLoaded[bookSelected]}/>
+      <section className={classes.likebuttons}>
+          <div onClick={updateDislikesHandler}><img src={dlbutton} alt="Dislike"/></div>
+          <div onClick={updateLikesHandler}><img src={lbutton} alt="Like"/></div>
+      </section>
     </div>
   );
 }

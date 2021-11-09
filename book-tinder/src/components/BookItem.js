@@ -9,9 +9,9 @@ function BookItem(props) {
                     <img src={props.image} alt={props.title}/>
                 </div>
                 <div className={classes.content}>
-                    <h3>{props.title}</h3>
-                    <h3>Likes: {props.likes}</h3>
-                    <h3>Dislikes: {props.dislikes}</h3>
+                    <h2>{props.title}</h2>
+                    <h3>Intelligent: {props.likes}</h3>
+                    <h3>Not: {props.dislikes}</h3>
                 </div>
             </Card>
         </li>

@@ -1,7 +1,6 @@
 import classes from './Card.module.css';
-//import likeButton from '../images/like.png';
-//import dislikeButton from '../images/dislike.png';
 
+//Card container. {props.children} displays all contents that were passed in via props
 function Card(props) {
     return (
         <div>

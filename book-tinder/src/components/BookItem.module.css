@@ -12,13 +12,7 @@
     font-size: 1.25rem;
     color: #2c292b;
   }
-}
-
-.item {
-
-
-  }
-  
+} 
   .item img {
     /* Adds rounded top corners to the image */
     border-top-left-radius: 18px;

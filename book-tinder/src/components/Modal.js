@@ -1,15 +1,17 @@
 // This is the component that will display when the modal is set to true.
 // The modal acts as a landing page and allows the user to add a new book to the database
 
-import { useRef }from 'react';
-
-import classes from './Modal.module.css';
-import logo from '../images/bookinder-logo.png';
+import { useRef }from 'react';                                      // useRef keeps data mutable
+import classes from './Modal.module.css';                           // our CSS code
+import logo from '../images/bookinder-logo.png';                    // bookinder logo
 
 function Modal(props){
+
+    // Mutable object data
     const bookTitleInputRef = useRef();
     const bookAddressInputRef = useRef();
 
+    // Closes Modal
     function closeHandler(){
         props.onClose();
     }
@@ -18,6 +20,7 @@ function Modal(props){
     function submitHandler(event){
         event.preventDefault();
 
+        // Handles the book object and sets likes and dislikes to a default of zero
         const enteredBookTitle = bookTitleInputRef.current.value;
         const enteredBookAddress = bookAddressInputRef.current.value;
         const zeroLikes = 0;
@@ -29,7 +32,6 @@ function Modal(props){
             likes: zeroLikes,
             dislikes: zeroDislikes
         };
-
         addNewBookHandler(bookData);
     }
 

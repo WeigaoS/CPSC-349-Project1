@@ -1,0 +1,140 @@
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+  z-index: 1050;
+
+  width: 30rem;
+  
+  overflow: hidden;
+  outline: 0;
+  text-align: left;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+.modal {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modalDialog {
+  -webkit-transform: none;
+  transform: none;
+  
+}
+.modalDialog {
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+
+}
+
+.modalContent {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.modalHeader {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+/*form {
+  border: 1px solid #FFC0CB;
+}*/
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04aa6d;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: 100px;
+  padding: 10px 10px;
+  background-color: #f44336;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Add padding to containers
+.container {
+  padding: 0px;
+}*/
+
+/* The "Forgot password" text */
+span.psw {
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
